@@ -95,7 +95,7 @@ export default function ShoppingCartListItem(props: shoppingCartItemProps) {
         <figure>
           <Image
             // src={`https://picsum.photos/seed/${id}/200/300`}
-            src={`public/assets/products/beng-beng.png`}
+            src={`assets/products/beng-beng.png`}
             alt={title}
             width={150}
             height={225}
