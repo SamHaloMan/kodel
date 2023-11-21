@@ -36,7 +36,7 @@ export default function BookInfoSection() {
               <li>
                 <NextLink href='/'>
                   <HomeIcon className='w-4 h-4' />
-                  Book
+                  Product
                 </NextLink>
               </li>
               <li>
