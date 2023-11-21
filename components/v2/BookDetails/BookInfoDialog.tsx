@@ -62,10 +62,10 @@ const BookInfoDialog = React.forwardRef(
     return (
       <dialog id={id} className='modal' ref={ref}>
         <form method='dialog' className='modal-box'>
-          <h3 className='font-bold text-lg'>Edit Book Details</h3>
+          <h3 className='font-bold text-lg'>Edit Product Details</h3>
           <div className='form-control w-full max-w-xs'>
             <label className='label'>
-              <span className='label-text'>Book Type</span>
+              <span className='label-text'>Product Type</span>
             </label>
             <input
               type='text'
@@ -76,7 +76,7 @@ const BookInfoDialog = React.forwardRef(
           </div>
           <div className='form-control w-full max-w-xs'>
             <label className='label'>
-              <span className='label-text'>Book Title</span>
+              <span className='label-text'>Product Title</span>
             </label>
             <input
               type='text'
@@ -87,7 +87,7 @@ const BookInfoDialog = React.forwardRef(
           </div>
           <div className='form-control w-full max-w-xs'>
             <label className='label'>
-              <span className='label-text'>Publication Date</span>
+              <span className='label-text'>Stock Date</span>
             </label>
             <input
               type='text'
@@ -103,7 +103,7 @@ const BookInfoDialog = React.forwardRef(
             <input
               type='text'
               className='input input-sm input-bordered w-full max-w-xs'
-              value={`$ ${currencyFormat(data.price)}`}
+              value={`Rp ${currencyFormat(data.price)}`}
               disabled
             />
           </div>

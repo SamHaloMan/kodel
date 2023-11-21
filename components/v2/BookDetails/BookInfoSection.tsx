@@ -62,13 +62,13 @@ export default function BookInfoSection() {
                 </p>
                 <p>
                   <span className='text-lg font-bold pr-4'>
-                    Publication date:
+                    Stock date:
                   </span>
                   {new Date(data.publishedAt).toLocaleDateString()}
                 </p>
                 <p>
                   <span className='text-lg font-bold pr-4'>Price:</span>
-                  {`$ ${currencyFormat(data.price)}`}
+                  {`Rp ${currencyFormat(data.price)}`}
                 </p>
                 <p>
                   <span className='text-lg font-bold pr-4'>In stock:</span>

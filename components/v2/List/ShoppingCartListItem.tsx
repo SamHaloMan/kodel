@@ -111,12 +111,12 @@ export default function ShoppingCartListItem(props: shoppingCartItemProps) {
               {type.replaceAll(`_nbsp_`, ` `).replaceAll(`_amp_`, `&`)}
             </p>
             <p>
-              <span className='text-lg font-bold pr-4'>Publication date:</span>
+              <span className='text-lg font-bold pr-4'>Stock date:</span>
               {new Date(publishedAt).toLocaleDateString()}
             </p>
             <p>
               <span className='text-lg font-bold pr-4'>Price:</span>
-              {`$ ${currencyFormat(price)}`}
+              {`Rp ${currencyFormat(price)}`}
             </p>
             <p>
               <span className='text-lg font-bold pr-4'>In stock:</span>
@@ -126,10 +126,10 @@ export default function ShoppingCartListItem(props: shoppingCartItemProps) {
               <div className='join'>
                 <button
                   className='btn btn-sm join-item'
-                  disabled={quantity >= stock}
-                  onClick={handleAddQty}
+                  disabled={quantity <= 1}
+                  onClick={handleRemoveQty}
                 >
-                  <PlusIcon className='stroke-current shrink-0 w-6 h-6' />
+                  <MinusIcon className='stroke-current shrink-0 w-6 h-6' />
                 </button>
                 <input
                   className='input input-sm input-bordered join-item w-12'
@@ -138,10 +138,10 @@ export default function ShoppingCartListItem(props: shoppingCartItemProps) {
                 />
                 <button
                   className='btn btn-sm join-item'
-                  disabled={quantity <= 1}
-                  onClick={handleRemoveQty}
+                  disabled={quantity >= stock}
+                  onClick={handleAddQty}
                 >
-                  <MinusIcon className='stroke-current shrink-0 w-6 h-6' />
+                  <PlusIcon className='stroke-current shrink-0 w-6 h-6' />
                 </button>
               </div>
               <div className='flex justify-end gap-4'>
