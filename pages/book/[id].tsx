@@ -23,8 +23,8 @@ const Book: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Book Details</title>
-        <meta name='description' content='Book Details' />
+        <title>Product Details</title>
+        <meta name='description' content='Product Details' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
