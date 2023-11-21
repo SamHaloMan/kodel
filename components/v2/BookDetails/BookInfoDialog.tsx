@@ -44,13 +44,13 @@ const BookInfoDialog = React.forwardRef(
         stock: stock,
       });
       if (res.error) {
-        enqueueSnackbar(`Error: Update book details.`, {
+        enqueueSnackbar(`Error: Update product details.`, {
           variant: 'error',
         });
         setIsUpdating(false);
         return;
       }
-      enqueueSnackbar(`Book details was updated.`, {
+      enqueueSnackbar(`Product details was updated.`, {
         variant: 'success',
       });
       res.content?.data && onSuccess && onSuccess(res.content.data);
