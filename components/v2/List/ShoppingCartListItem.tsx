@@ -94,7 +94,8 @@ export default function ShoppingCartListItem(props: shoppingCartItemProps) {
       <div className='card card-side bg-base-100 shadow-xl'>
         <figure>
           <Image
-            src={`https://picsum.photos/seed/${id}/200/300`}
+            // src={`https://picsum.photos/seed/${id}/200/300`}
+            src={`/assets/products/beng-beng.png`}
             alt={title}
             width={150}
             height={225}

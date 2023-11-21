@@ -130,7 +130,7 @@ const BookInfoDialog = React.forwardRef(
             <button className='btn'>Cancel</button>
             <button
               className='btn btn-info'
-              disabled={!isStockValid || isUpdating || stock === data.stock}
+              
               onClick={handleUpdate}
             >
               {isUpdating && <span className='loading loading-spinner' />}

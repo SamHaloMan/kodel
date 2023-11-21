@@ -49,7 +49,8 @@ export default function BookInfoSection() {
           <div className='hero h-auto justify-start shadow-xl rounded-box'>
             <div className='hero-content flex-col lg:flex-row'>
               <Image
-                src={`https://picsum.photos/seed/${data.id}/200/280`}
+                // src={`https://picsum.photos/seed/${data.id}/200/280`}
+                src={`/assets/products/beng-beng.png`}
                 alt={`book image`}
                 width={200}
                 height={280}
