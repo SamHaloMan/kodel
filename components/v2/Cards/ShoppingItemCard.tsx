@@ -77,7 +77,7 @@ export default function ShoopingItemCard(props: BookProps) {
         <HalfRating rating={averageRating} disabled />
         <div className='card-actions justify-end'>
           <button className='btn' onClick={addItem}>
-            ${currencyFormat(price)}
+            Rp {currencyFormat(price)}
             <ShoppingCartIcon className='h-6 w-6' />
           </button>
           <NextLink href={`/book/${id}`} className='btn btn-info'>
