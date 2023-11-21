@@ -60,7 +60,7 @@ export default function ShoopingItemCard(props: BookProps) {
       <figure>
         <Image
           // src={`https://picsum.photos/seed/${id}/384/140`}
-          src={`/assets/products/beng-beng.png`}
+          src={`public/assets/products/beng-beng.png`}
           alt={title}
           width={384}
           height={140}
