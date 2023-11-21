@@ -23,7 +23,7 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>KoDel</title>
-        <meta name='description' content='Bookstore Home Page' />
+        <meta name='description' content='Koperasi Del' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
