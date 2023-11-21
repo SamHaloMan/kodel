@@ -44,8 +44,8 @@ const SubTotal = (props: { sum: number; price: number }) => {
       <p className='font-bold'>
         <span className='pr-1'>
           {sum === 1
-            ? `Subtotal: (${sum} item) $`
-            : `Subtotal: (${sum} items) $`}
+            ? `Subtotal: (${sum} item) Rp`
+            : `Subtotal: (${sum} items) Rp`}
         </span>
         {price}
       </p>
