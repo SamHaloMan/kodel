@@ -148,8 +148,8 @@ export default function ShoppingCartListItem(props: shoppingCartItemProps) {
                 <div className='font-bold'>
                   <span className='pr-1'>
                     {quantity === 1
-                      ? `(${quantity} item) $`
-                      : `(${quantity} items) $`}
+                      ? `(${quantity} item) Rp`
+                      : `(${quantity} items) Rp`}
                   </span>
                   {calcCartItemTotalPrice([props])}
                 </div>

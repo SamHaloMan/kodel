@@ -71,7 +71,7 @@ const BookInfoDialog = React.forwardRef(
               type='text'
               className='input input-sm input-bordered w-full max-w-xs'
               value={data.type}
-              disabled
+              
             />
           </div>
           <div className='form-control w-full max-w-xs'>
@@ -82,7 +82,7 @@ const BookInfoDialog = React.forwardRef(
               type='text'
               className='input input-sm input-bordered w-full max-w-xs'
               value={data.title}
-              disabled
+              
             />
           </div>
           <div className='form-control w-full max-w-xs'>
@@ -93,7 +93,7 @@ const BookInfoDialog = React.forwardRef(
               type='text'
               className='input input-sm input-bordered w-full max-w-xs'
               value={new Date(data.publishedAt).toLocaleDateString()}
-              disabled
+              
             />
           </div>
           <div className='form-control w-full max-w-xs'>
@@ -104,7 +104,7 @@ const BookInfoDialog = React.forwardRef(
               type='text'
               className='input input-sm input-bordered w-full max-w-xs'
               value={`Rp ${currencyFormat(data.price)}`}
-              disabled
+              
             />
           </div>
           <div className='form-control w-full max-w-xs'>
